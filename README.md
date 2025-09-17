@@ -4,7 +4,7 @@ Full-stack Online Book Store built with Spring Boot (backend) and Angular (front
 
 ![Alt text] (https://github.com/Kankoo1/bookstore-app/blob/develop/reference%20diagram.png)
 
-
+<pre>
 bookstore-backend/
 │
 ├─ src/
@@ -52,3 +52,4 @@ bookstore-backend/
 ├─ Dockerfile                       # Optional Docker container
 ├─ .gitignore
 └─ README.md
+</pre>
