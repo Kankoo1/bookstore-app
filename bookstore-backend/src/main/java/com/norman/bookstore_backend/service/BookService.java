@@ -26,7 +26,25 @@ public class BookService {
         return bookRepository.findById(id);
       }
 
+       public Book saveBook(Book book) {
+        return bookRepository.save(book);
+       }
+
+       public void deleteBYId(Long id) {
+        bookRepository.deleteById(id);
+       }
 
 
+       public List<Book> findBooksByTitle(String title) {
+        return bookRepository.findByTitleContainingIgnoreCase(title);
+       }
 
+
+       public List<Book> findBooksByAuthor(String author) {
+        return bookRepository.findByAuthorIgnoreCase(author);
+       }
+
+       public Optional<Book> findBookByIsbn(String isbn) {
+        return Optional.ofNullable(bookRepository.findByIsbn(isbn));
+       }
 }
